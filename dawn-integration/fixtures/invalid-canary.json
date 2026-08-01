@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "authorised": false,
+  "source_type": "youtube_url",
+  "source_path": "https://youtube.example.invalid/watch?v=unowned",
+  "source_owned_or_licensed": false,
+  "network_execution": true,
+  "model_route": "cloud_provider",
+  "provider_credentials": true,
+  "direct_publish": true,
+  "social_credentials": true,
+  "diarisation_download": true,
+  "output_destination": "social_platform",
+  "output_dir": "relative/output",
+  "aspect_ratio": "all",
+  "caption_style": "unknown",
+  "max_source_duration_seconds": 7200,
+  "max_clips": 50
+}
