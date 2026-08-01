@@ -4,6 +4,7 @@
 This validator does not read or process media. It only proves that a proposed
 first canary is local, authorised, rights-cleared and bounded.
 """
+
 from __future__ import annotations
 
 import json
@@ -72,12 +73,12 @@ def evaluate(payload: dict[str, Any]) -> dict[str, Any]:
             "media_processed": False,
             "model_called": False,
             "service_started": False,
-            "asset_published": False
+            "asset_published": False,
         },
         "warnings": errors,
         "network_used": False,
         "credentials_used": False,
-        "external_actions_performed": False
+        "external_actions_performed": False,
     }
 
 
@@ -97,7 +98,7 @@ def main() -> int:
         "media_rights_required" in refused["warnings"],
         "network_execution_prohibited" in refused["warnings"],
         "direct_publish_prohibited" in refused["warnings"],
-        "clip_count_limit" in refused["warnings"]
+        "clip_count_limit" in refused["warnings"],
     ]
     report = {
         "capability": "dawn-autoclip",
@@ -107,7 +108,7 @@ def main() -> int:
         "network_used": False,
         "credentials_required": False,
         "media_processed": False,
-        "external_actions_performed": False
+        "external_actions_performed": False,
     }
     print(json.dumps(report, indent=2))
     return 0 if all(assertions) else 1
