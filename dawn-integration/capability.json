@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "capability_id": "dawn-autoclip",
+  "source_repository": "thetondj-gif/autoclip",
+  "source_revision": "5d0eac36fa615b79dd2104083bf273a96f8d68bb",
+  "status": "PREPARATION_READY",
+  "purpose": "Convert authorised local video into reviewable short-form clip candidates without publishing or external account access.",
+  "integration_mode": "isolated-local-media-executor",
+  "read_write_classification": "read-approved-media-write-canary-assets-only",
+  "required_credentials": [],
+  "network_access": "disabled-for-first-canary",
+  "persistent_ports": [],
+  "risk_rating": "medium",
+  "allowed_operations": [
+    "validate_canary_request",
+    "local_transcription_canary",
+    "local_clip_selection_canary",
+    "local_caption_render_canary",
+    "write_canary_assets"
+  ],
+  "prohibited_operations": [
+    "remote_media_download",
+    "unlicensed_media_processing",
+    "cloud_provider_use_in_first_canary",
+    "social_account_access",
+    "automatic_publishing",
+    "production_runtime_activation",
+    "canonical_memory_write"
+  ],
+  "connected_to_dawn": false,
+  "production_verified": false
+}

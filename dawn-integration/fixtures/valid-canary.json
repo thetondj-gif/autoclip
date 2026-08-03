@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "authorised": true,
+  "source_type": "local_file",
+  "source_path": "/tmp/dawn-autoclip/input/operator-owned-demo.mp4",
+  "source_owned_or_licensed": true,
+  "network_execution": false,
+  "model_route": "local_ollama",
+  "provider_credentials": false,
+  "direct_publish": false,
+  "social_credentials": false,
+  "diarisation_download": false,
+  "output_destination": "canary_only",
+  "output_dir": "/tmp/dawn-autoclip/output",
+  "aspect_ratio": "9:16",
+  "caption_style": "clean_lower",
+  "max_source_duration_seconds": 180,
+  "max_clips": 3
+}
